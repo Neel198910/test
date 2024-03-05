@@ -31,6 +31,7 @@ def call() {
                     script {
                         sh 'docker build -t goutham/multi:v4 .'
                         sh 'docker images'
+                        sh 'docker ps'
                     }
                 }
             }
