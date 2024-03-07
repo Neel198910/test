@@ -1,13 +1,13 @@
 def call() {
     pipeline {
-        agent any
-        stages {
-            stage('Git Checkout') {
-                steps {
-                    script {
-                        git branch: 'node-dev', url: 'https://github.com/Neel198910/tas.git'
-                    }
-                }
+        // agent any
+        // stages {
+        //     stage('Git Checkout') {
+        //         steps {
+        //             script {
+        //                 git branch: 'node-dev', url: 'https://github.com/Neel198910/tas.git'
+        //             }
+        //         }
             }
             stage ('Build') {
                 steps {
